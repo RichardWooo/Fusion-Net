@@ -10,6 +10,7 @@ from torch import Tensor, nn
 class CrossAttentionConfig:
     """Configuration for the cross-attention fusion module."""
 
+    #향후 embed_dim 을 1024정도로 더 늘리면 재미있을 거 같기도하고?
     embed_dim: int = 512
     num_heads: int = 4
     ff_multiplier: int = 4
